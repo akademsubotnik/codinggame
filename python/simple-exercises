@@ -1,0 +1,11 @@
+#Write a program that asks the user for a number n and prints the sum of the numbers 1 to n
+n = int(input("please enter a number "))
+
+#print(n)
+
+#for loop or while loop:
+sum  = 0
+for i in range(n):
+    sum = sum + i
+    print(i)
+print(sum + n)
