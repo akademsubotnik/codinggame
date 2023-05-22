@@ -79,18 +79,23 @@ guesses = []
 
 if guess == secret_number:
     print("correct!")
-else:
+elif guess > secret_number:
+    print("too high")
     guesses.append(guess)
-    while guess != secret_number:
-        guess = int(input("guess again "))
-        if guess in guesses:
-            print("already guessed")
-        elif guess > secret_number:
-            print("too high")
-            guesses.append(guess)
-        elif guess < secret_number:
-            print("too low")
-            guesses.append(guess)
+elif guess < secret_number:
+    print("too low")
+    guesses.append(guess)
+
+while guess != secret_number:
+    guess = int(input("guess again "))
+    if guess in guesses:
+        print("already guessed")
+    elif guess > secret_number:
+        print("too high")
+        guesses.append(guess)
+    elif guess < secret_number:
+        print("too low")
+        guesses.append(guess)
 
 print("correct!")
 print(secret_number)
