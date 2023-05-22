@@ -99,3 +99,9 @@ while guess != secret_number:
 
 print("correct!")
 print(secret_number)
+
+#Write a program that prints the next 20 leap years.
+
+#2024 is the next leap year
+for i in range(2024,2104,4):
+    print(i)
