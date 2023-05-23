@@ -6,3 +6,12 @@ def return_largest_list_element(int_list):
 
 numbers = [2,3,6,7,2,8,1]
 return_largest_list_element(numbers)
+
+#Write function that reverses a list, preferably in place.
+#Understand why print(list_int.reverse() RETURNS None
+def reverse_listofints(list_int):
+    list_int.reverse()
+    print(list_int)
+
+numbers = [1,2,3,4,5,6,7,8]
+reverse_listofints(numbers)
