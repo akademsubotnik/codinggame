@@ -29,3 +29,14 @@ numbers = [1,2,3,4,5,6,7]
 value = 12
 
 list_contains(numbers,value)
+
+#Write a function that returns the elements on odd positions in a list.
+
+def return_oddlist_values(list_int):
+    for i in range(0,len(list_int),2):
+        print(list_int.index(i))
+
+
+numbers = [8,1,2,3,4,5,6,7,0]
+
+return_oddlist_values(numbers)
