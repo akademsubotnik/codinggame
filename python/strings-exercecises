@@ -40,3 +40,17 @@ def return_oddlist_values(list_int):
 numbers = [8,1,2,3,4,5,6,7,0]
 
 return_oddlist_values(numbers)
+
+#Write a function that computes the running total of a list
+
+def list_total(list_int):
+    print("List total ")
+    total = 0
+    for i in range(len(list_int)):
+        total = total + list_int.index(i)
+    print(total)
+
+
+numbers = [1,2,3,4,5,6,7,8,9,0]
+
+list_total(numbers)
