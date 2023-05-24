@@ -72,3 +72,40 @@ string_notpalindrome = "robot"
 
 check_if_palindrome("racecar")
 check_if_palindrome(string_notpalindrome)
+
+
+#Write three functions that compute the sum of the numbers in a list:
+# using a for-loop, a while-loop and recursion.
+# (Subject to availability of these constructs in your language of choice.)
+
+def sum_forloop(list_int):
+    total = 0
+    for i in range(len(list_int)):
+        total = total + list_int.index(i)
+    print("List total for loop " + str(total))
+
+def sum_whileloop(list_int):
+    total = 0
+    i = 0
+    while i < len(list_int):
+        total = total + list_int.index(i)
+        i = i + 1
+    print("List total while loop " + str(total))
+
+def sum_recursion(list_int):
+    total = 0
+    l_numbers = list_int
+    i = 0
+    while len(l_numbers) >= 1:
+        total = total + l_numbers.index(i)
+        print(total)
+        l_numbers.pop(i)
+        i = i + 1
+        sum_recursion(l_numbers)
+    #print("List total recursion loop " + str(total))
+
+numbers = [1,2,3,4,5,6,7,8,9,0]
+
+sum_forloop(numbers)
+sum_whileloop(numbers)
+sum_recursion(numbers)
