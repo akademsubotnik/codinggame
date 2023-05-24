@@ -15,3 +15,11 @@ String Exercises
 #7 (palindrome function)
 
 #8
+
+#10
+
+#11
+
+#12
+
+#13
