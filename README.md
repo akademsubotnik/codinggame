@@ -12,3 +12,4 @@ Simple Exercises
 String Exercises
 ----------------
 #7 (palindrome function)
+#8
