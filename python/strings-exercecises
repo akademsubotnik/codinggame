@@ -120,3 +120,19 @@ list_char = ['a','b','c']
 list_int = [1,2,3]
 
 print(lists_concatenate(list_char,list_int))
+
+#Write a function that takes a number and returns a list of its digits.
+# So for 2342 it should return [2,3,4,2].
+
+
+def int2list(int_i):
+    list_l = []
+
+    for i in range(len(str(int_i))):
+        list_l.append(str(int_i)[i])
+
+    return list_l
+
+number = 2342
+
+print(int2list(number))
