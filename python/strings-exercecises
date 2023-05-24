@@ -109,3 +109,14 @@ numbers = [1,2,3,4,5,6,7,8,9,0]
 sum_forloop(numbers)
 sum_whileloop(numbers)
 sum_recursion(numbers)
+
+
+#Write a function that concatenates two lists. [a,b,c], [1,2,3] → [a,b,c,1,2,3]
+
+def lists_concatenate(list_1,list_2):
+    return list_1 + list_2
+
+list_char = ['a','b','c']
+list_int = [1,2,3]
+
+print(lists_concatenate(list_char,list_int))
