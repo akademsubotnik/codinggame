@@ -82,7 +82,7 @@ def sum_forloop(list_int):
     total = 0
     for i in range(len(list_int)):
         total = total + list_int.index(i)
-    print("List total for loop " + str(total))
+    return "List total for loop " + str(total)
 
 def sum_whileloop(list_int):
     total = 0
@@ -90,25 +90,20 @@ def sum_whileloop(list_int):
     while i < len(list_int):
         total = total + list_int.index(i)
         i = i + 1
-    print("List total while loop " + str(total))
+    return "List total while loop " + str(total)
 
-def sum_recursion(list_int):
-    total = 0
-    l_numbers = list_int
-    i = 0
-    while len(l_numbers) >= 1:
-        total = total + l_numbers.index(i)
-        print(total)
-        l_numbers.pop(i)
-        i = i + 1
-        sum_recursion(l_numbers)
-    #print("List total recursion loop " + str(total))
+def sum_recursion(l):
+    if len(l) == 0:
+        return 0
+    else:
+        return l[0] + sum_recursion(l[1:])
+
 
 numbers = [1,2,3,4,5,6,7,8,9,0]
 
-sum_forloop(numbers)
-sum_whileloop(numbers)
-sum_recursion(numbers)
+print(sum_forloop(numbers))
+print(sum_whileloop(numbers))
+print("List total with recursion loop " + str(sum_recursion(numbers)))
 
 
 #Write a function that concatenates two lists. [a,b,c], [1,2,3] → [a,b,c,1,2,3]
