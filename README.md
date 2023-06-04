@@ -2,7 +2,7 @@
 
 https://adriann.github.io/programming_problems.html
 
-To do: 
+To do:
 
 Simple Exercises
 ----------------
